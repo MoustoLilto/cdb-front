@@ -12,6 +12,9 @@ import { CompanyService } from './company.service';
     HttpClientModule
   ],
   declarations: [CompanyComponent],
-  providers: [CompanyService]
+  providers: [CompanyService],
+  exports: [
+    CompanyComponent
+  ]
 })
 export class CompanyModule { }
