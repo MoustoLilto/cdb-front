@@ -10,6 +10,7 @@ import { CompanyEditComponent } from './company-edit/company-edit.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { CompanyAddComponent } from './company-add/company-add.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatGridListModule
   ],
   declarations: [
     CompanyComponent,

@@ -1,6 +1,7 @@
 import { Company } from './../../model/company.model';
 import { CompanyService } from './../company.service';
 import { Component, OnInit } from '@angular/core';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-companies',

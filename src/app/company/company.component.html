@@ -1,19 +1,16 @@
 <div>
-  <mat-card class="example-card">
+  <mat-card routerLink="/companies/edit/{{ company.id }}" class="example-card">
     <mat-card-header>
-      <div routerLink="/companies/edit/{{ company.id }}">
-      <div mat-card-avatar>
-        <img mat-card-image class="example-header-image" [src]= "imgURL" >
-      </div>
+
+      <div mat-card-avatar class="example-header-image"></div>
 
       <mat-card-title class="company-name">{{ company.name }}</mat-card-title>
-      </div>
 
       <span class="example-spacer"></span>
 
-      <button (click)="deleteRecipe()" class="button-delete">
+      <a (click)="deleteRecipe()" class="button-delete">
         <mat-icon svgIcon="delete" class="example-icon">delete</mat-icon>
-      </button>
+      </a>
 
     </mat-card-header>
   </mat-card>

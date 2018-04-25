@@ -1,26 +1,37 @@
 .example-card {
     max-width: 500px;
-    text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 500px;
+    background-color: gainsboro;
 }
 
-.example-icon {
-    padding: 0 14px;
+.global{
+    display:inline-block;
+}
+
+.example-card:hover {
+    cursor: pointer;
+    background-color: rgb(131, 127, 127);
+}
+
+.example-header-image {
+    background-image: url('assets/img/manufacturer.svg');
+    background-size: cover;
+}
+.company-name{
+    text-align: left;
 }
 
 .example-spacer {
     flex: 1 1 auto;
 }
 
-.example-header-image {
-    border-radius: 50%;
-    width: 100%;
-    padding: 1rem;
+.button-delete:hover{
+    cursor: pointer;
+    background-color: rgb(129, 9, 9);
+    padding: 8px 4px;
+    display: inline-block;
 }
 
-.company-name{
-}
-
-.button-delete{
+.example-icon {
+    padding: 0 14px;
 }

@@ -8,7 +8,10 @@
       <input type="text" class="form-control" id="name" placeholder="Company name.." formControlName="name">
     </div>
 
-    <button [disabled]="!modelForm.valid" (click)="addCompany()">Submit</button>
+    <div class="Bouttons">
+        <button [disabled]="!modelForm.valid" (click)="addCompany()">Add</button>
+        <button routerLink="/companies">Cancel</button>
+    </div>
   </form>
 
 </div>

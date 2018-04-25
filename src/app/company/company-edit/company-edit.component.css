@@ -16,6 +16,10 @@ h1{
     text-align: right;
 }
 
+.container{
+    margin-left: 25%;
+    margin-right: 25%;
+}
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -26,9 +30,13 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+.Bouttons{
+    display:inline-block;
+    float: right;
+}
+
 button{
-    width: 100%;
-    background-color: rgb(43, 72, 233);
+    background-color: black;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -38,7 +46,7 @@ button{
 }
 
 button:hover {
-    background-color: #4592a0;
+    background-color: dimgray;
 }
 
 div {

@@ -10,7 +10,10 @@
       </label>
     </div>
 
-    <button [disabled]="!modelForm.valid" (click)="addCompany()">Submit</button>
+    <div class="Bouttons">
+      <button [disabled]="!modelForm.valid" (click)="updateCompany()">Update</button>
+      <button routerLink="/companies">Cancel</button>
+    </div>  
   </form>
 
 </div>

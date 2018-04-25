@@ -1,9 +1,16 @@
-.toolbar-title{
-    margin-left: 25%;
+.headerToolbar{
+    background-color: rgb(0, 0, 0);
 }
 
-.headerToolbar{
-    text-align: center;
+.toolbar-title{
+    color: blanchedalmond;
+    font-size: 150%;
+    padding: 15px;
+}
+
+.toolbar-title:hover{
+    color: rgb(238, 207, 161);
+    cursor: pointer;
 }
 
 .example-spacer {
@@ -11,5 +18,12 @@
 }
 
 .add-link{
-    margin-right: 25%;
+    color: blanchedalmond;
+    font-size: 150%;
+    padding: 15px;
+}
+
+.add-link:hover{
+    color: rgb(238, 207, 161);
+    cursor: pointer;
 }

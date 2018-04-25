@@ -38,7 +38,7 @@ export class CompanyEditComponent implements OnInit{
     });
   }
 
-  sendRecipe(): void {
+  updateCompany(): void {
     this.company.name = this.modelForm.controls.name.value;
     this.CompanyService.updateCompany(this.company).subscribe(() => {
       this.router.navigate(['/companies']);
