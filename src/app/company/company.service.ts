@@ -21,7 +21,7 @@ export class CompanyService {
     return this.http.get<Company[]>(this.cdbURl);
   }
 
-  getCompany(id: number): Observable<Company> {
+  getCompany(id: string): Observable<Company> {
     return this.http.get<Company>(this.cdbURl+"/"+id);
   }
 
@@ -34,7 +34,7 @@ export class CompanyService {
   }
 
   addCompany(company: Company): Observable<Company>{
-    return this.http.post<Company>(this.cdbURl+"/create", company, this.httpOptions);
+    return this.http.post<Company>(this.cdbURl+"/create", company);
   }
 
   updateCompany(company: Company): Observable<Company>{

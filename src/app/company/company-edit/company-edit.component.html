@@ -1,0 +1,18 @@
+<div *ngIf="company" class="container">
+  <h1>Update a Company:</h1>
+
+  <form [formGroup]="modelForm">
+
+    <div class="form-group">
+      <label for="name">Name:
+        <input type="text" class="form-control" id="name" [value] ="company.name" formControlName="name">
+      </label>
+    </div>
+
+    <!-- <p>Form value: {{ modelForm.value | json }}</p>
+    <p>Form status: {{ modelForm.status | json }}</p> -->
+
+    <button [disabled]="!modelForm.valid" (click)="addCompany()">Submit</button>
+  </form>
+
+</div>

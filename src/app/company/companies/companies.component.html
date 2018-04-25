@@ -1,0 +1,2 @@
+<button routerLink="/companies/add">Add a Company!</button>
+<app-company *ngFor="let company of companies" [company]="company" (deletedCompany)="deletedCompany($event)"></app-company>

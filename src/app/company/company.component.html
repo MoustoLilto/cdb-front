@@ -1,7 +1,17 @@
-<p>
-  company works!
-</p>
+<div>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar>
+        <img mat-card-image class="example-header-image" [src]= "imgURL" >
+      </div>
+      <mat-card-title routerLink="/companies/edit/{{ company.id }}">{{ company.name }}</mat-card-title>
+    </mat-card-header>
 
-<button (click)="showCompany()">
-  get Companies!
-</button>
+    <mat-card-actions>
+      <button (click)="deleteRecipe()" mat-raised-button color="warn">
+        <span>Delete</span>
+      </button>
+    </mat-card-actions>
+    
+  </mat-card>
+</div>
