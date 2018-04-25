@@ -9,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompaniesComponent implements OnInit {
   companies: Company[]
+  NbreCompany: number
 
   constructor(private CompanyService: CompanyService) {
   }
 
   ngOnInit() {
+    this.getNbreCompany();
     this.getCompanies();
   }
 
@@ -23,8 +25,15 @@ export class CompaniesComponent implements OnInit {
     });
   }
 
+  getNbreCompany(){
+    this.CompanyService.getNbreCompany().subscribe(data => {
+      this.NbreCompany = data;
+    });
+  }
+
   deletedCompany(company: Company){
     const indexCompany = this.companies.indexOf(company);
     this.companies.splice(indexCompany, 1);
+    this.NbreCompany--;
   }
 }

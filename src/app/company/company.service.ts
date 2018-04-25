@@ -6,7 +6,7 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class CompanyService {
 
-  cdbURl = "http://localhost:8080/webapp/companies";
+  cdbURl = "http://10.0.1.96:8080/webapp/companies";
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -25,8 +25,8 @@ export class CompanyService {
     return this.http.get<Company>(this.cdbURl+"/"+id);
   }
 
-  getNbreCompany(): Observable<Number>{
-    return this.http.get<Number>(this.cdbURl+"/nombre");
+  getNbreCompany(): Observable<number>{
+    return this.http.get<number>(this.cdbURl+"/nombre");
   }
 
   rmCompany(id: number): Observable<Company>{

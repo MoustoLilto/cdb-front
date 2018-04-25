@@ -1,3 +1,4 @@
+import { HeaderModule } from './header/header.module';
 import { CustomMaterialModule } from './custom-material/custom-material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,6 +15,7 @@ import { AppRoutingModule } from './/app-routing.module';
     BrowserAnimationsModule,
     CustomMaterialModule,
     BrowserModule,
+    HeaderModule,
     CompanyModule,
     AppRoutingModule
   ],

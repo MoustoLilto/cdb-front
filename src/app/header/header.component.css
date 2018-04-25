@@ -1,0 +1,15 @@
+.toolbar-title{
+    margin-left: 25%;
+}
+
+.headerToolbar{
+    text-align: center;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.add-link{
+    margin-right: 25%;
+}

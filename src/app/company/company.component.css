@@ -5,8 +5,22 @@
     margin-right: auto;
 }
 
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
 .example-header-image {
     border-radius: 50%;
     width: 100%;
     padding: 1rem;
+}
+
+.company-name{
+}
+
+.button-delete{
 }

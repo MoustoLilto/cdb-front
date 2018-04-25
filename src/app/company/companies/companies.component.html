@@ -1,2 +1,6 @@
-<button routerLink="/companies/add">Add a Company!</button>
+<div class="companies-found">
+    <h1>
+        {{ NbreCompany }} Companies found
+    </h1>
+</div>
 <app-company *ngFor="let company of companies" [company]="company" (deletedCompany)="deletedCompany($event)"></app-company>

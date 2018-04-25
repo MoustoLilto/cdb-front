@@ -1,17 +1,20 @@
 <div>
   <mat-card class="example-card">
     <mat-card-header>
+      <div routerLink="/companies/edit/{{ company.id }}">
       <div mat-card-avatar>
         <img mat-card-image class="example-header-image" [src]= "imgURL" >
       </div>
-      <mat-card-title routerLink="/companies/edit/{{ company.id }}">{{ company.name }}</mat-card-title>
-    </mat-card-header>
 
-    <mat-card-actions>
-      <button (click)="deleteRecipe()" mat-raised-button color="warn">
-        <span>Delete</span>
+      <mat-card-title class="company-name">{{ company.name }}</mat-card-title>
+      </div>
+
+      <span class="example-spacer"></span>
+
+      <button (click)="deleteRecipe()" class="button-delete">
+        <mat-icon svgIcon="delete" class="example-icon">delete</mat-icon>
       </button>
-    </mat-card-actions>
-    
+
+    </mat-card-header>
   </mat-card>
 </div>
